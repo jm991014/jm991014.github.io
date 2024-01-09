@@ -1,6 +1,6 @@
 # Setup
 title:               Bellog
-tagline:             'A Jekyll theme'
+tagline:             
 description:         하고 싶은것만 하고 살 수는 없으니까..
 url:                 https://jm991014.github.io
 baseurl:             ''
@@ -9,14 +9,14 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Bellog
+  url:               
+  email:             jm991014@gmail.com
 
 # Gems
 plugins:
   - jekyll-paginate
 
 # Custom vars
-version:             1.1.0
+version:             1.0.0
 google_analytics_id: #UA-XXXX-Y
