@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
-  background-color: #202020;
+  background-color: #363636;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
@@ -234,7 +234,7 @@ a.sidebar-nav-item:focus {
 .sidebar-toggle:active,
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
+  color: #f7f7f7;
   background-color: #555;
 }
 
@@ -311,7 +311,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #f7f7f7;
 }
 .page-title,
 .post-title {
@@ -323,7 +323,7 @@ a.sidebar-nav-item:focus {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: #f7f7f7;
 }
 
 /* Related posts */

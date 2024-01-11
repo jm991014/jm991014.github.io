@@ -4,10 +4,24 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+  <div class="sidebar-item" style="text-align:center;">
+      <p><span style="font-weight:bolder; font-size:larger;">{{ site.description }}</span></p>
   </div>
-
+  <div class="sidebar-personal-info-section">
+    <p> contact:
+    {% for contact in site.author.contact %}
+    {% assign iconname = contact[0] %}
+    {% if contact[0] == 'email' %}
+    {% assign iconname = 'envelope' %}
+    {% endif %}
+    <a href="{{ contact[1] }}">
+      <i class="fa fa-{{ iconname }} fa-2x" aria-hidden="true"></i>
+    </a>
+    {% assign current_index = current_index | plus: 1 %}
+    {% if current_index != len %}|{% endif %}
+    {% endfor %}
+    </p>
+  </div>
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
 
@@ -25,8 +39,9 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+    <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
+    <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
+    <!-- <span class="sidebar-nav-item" ></span> -->
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
