@@ -12,6 +12,9 @@ author:
   name:              Bellog
   url:               
   email:             jm991014@gmail.com
+  contact:
+    github:           https://github.com/jm991014
+    email:            mailto:jm991014@gmail.com
 
 # Gems
 plugins:
