@@ -25,6 +25,6 @@ plugins:
 version:             1.0.0
 google_analytics_id: #UA-XXXX-Y
 
-webmaster_varifications:
+webmaster_verifications:
   google: 2qxjpU93UkaAuZuSLiT7Jzy1MCKngtyQ1VIOzxy1iPM
   naver: da8073733e6f72202ebec86e12e420ea4d7d59fb
