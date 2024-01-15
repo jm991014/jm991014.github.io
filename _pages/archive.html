@@ -3,6 +3,9 @@ layout: page
 title: Archive
 ---
 
+<h2>모든 카테고리</h2>
+<ul>
 {% for post in site.posts %}
   * {{ post.date | date_to_string }} &mdash; [ {{ post.title }} ]({{ post.url }})
 {% endfor %}
+</ul>

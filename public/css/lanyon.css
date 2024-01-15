@@ -27,7 +27,6 @@
  * Themes
  */
 
-
 /*
  * Global resets
  *
@@ -51,7 +50,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.025rem;
 }
 
-
 /*
  * Wrapper
  *
@@ -64,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
 }
-
 
 /*
  * Container
@@ -172,7 +169,15 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-item p:last-child {
   margin-bottom: 0;
 }
-
+/* Sidebar personal-info */
+.sidebar-personal-info a {
+  margin-left: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sidebar-personal-info i {
+  font-size: 21px; /* 아이콘 크기 조절 */
+}
 /* Sidebar nav */
 /* nav - border line below version */
 .sidebar-nav {
@@ -193,7 +198,10 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .sidebar-item {
-    padding: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
   }
   .sidebar-nav-item {
     padding-left:  1.5rem;
