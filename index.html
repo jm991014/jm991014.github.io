@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {{ post.content | truncate: 250 }}{% if post.content.size > 200 %} [더 읽기]({{ post.url | absolute_url }}){% endif %}
   </div>
   {% endfor %}
 </div>

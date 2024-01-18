@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  color: #f7f7f7;
+  color: #afb0b1;
   background-color: #1e1e1e;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -110,7 +110,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: #afb0b1;
 }
 
 
@@ -152,11 +152,12 @@ code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
+/*backtick 강조*/
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
+  color: #036635;
+  background-color: #323238;
   border-radius: 3px;
 }
 pre {
@@ -170,7 +171,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #363636;
 }
 pre code {
   padding: 0;
