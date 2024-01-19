@@ -7,11 +7,11 @@ baseurl:             ''
 paginate:            5
 permalink:           pretty
 
-nav:
-  Home: '/'
-  Blog: '/blog'
-  Categories: '/categories/'
-  Tags: '/tags/'
+# nav:
+#   Home: '/'
+#   Archives: '/archives/'
+#   Categories: '/categories/'
+#   Tags: '/tags/'
 
 # About/contact
 author:
@@ -32,3 +32,6 @@ google_analytics_id: #UA-XXXX-Y
 
 webmaster_verifications:
   google: 2qxjpU93UkaAuZuSLiT7Jzy1MCKngtyQ1VIOzxy1iPM
+
+include:
+  - _pages
