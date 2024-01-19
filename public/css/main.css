@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'D2Coding';
-    src: url('{{ site.baseurl }}/public/assets/fonts/D2Coding.woff') format('woff');
+    src: url('{{ site.baseurl }}/public/assets/fonts/D2Coding.woff') format('woff'),
+         url('{{ site.baseurl }}/public/assets/fonts/D2Coding.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
