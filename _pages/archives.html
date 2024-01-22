@@ -5,5 +5,5 @@ permalink: /archives/
 ---
 
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} &mdash; [{{ post.title }}]({{ post.url | absolute_url }})
+    {{ post.date | date_to_string }} &mdash; <a href="{{ post.url | absolute_url }}">{{ post.title }}</a><br>
 {% endfor %}
