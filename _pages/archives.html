@@ -4,23 +4,6 @@ title: Archives
 permalink: /archives/
 ---
 
-<div class="posts">
-    {% for post in paginator.posts %}
-    <div class="post">
-      <h1 class="post-title">
-        <a href="{{ post.url | absolute_url }}">
-          {{ post.title }}
-        </a>
-      </h1>
-  
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-  
-      {{ post.content | truncate: 250 }}
-      {% if post.content.size > 250 %} 
-        <a href ="{{ post.url | absolute_url }}">
-          더보기
-        </a>
-      {% endif %}
-    </div>
-    {% endfor %}
-  </div>
+{% for post in site.posts %}
+  * {{ post.date | date_to_string }} &mdash; [{{ post.title }}]({{ post.url | absolute_url }})
+{% endfor %}
