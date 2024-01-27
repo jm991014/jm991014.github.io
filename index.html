@@ -14,13 +14,9 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content | truncate: 250 }}
-    {% if post.content.size > 250 %} 
-      <a href ="{{ post.url | absolute_url }}">
-        더보기
-      </a>
-    {% endif %}
+    {{ post.content }}
   </div>
+  <div id="more" onclick="showMore()">더보기</div>
   {% endfor %}
 </div>
 
