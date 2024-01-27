@@ -14,6 +14,7 @@
   }, false);
 })(document);
 
+// Top progress bar
 document.addEventListener('DOMContentLoaded', function() {
   var element = document.documentElement,
     body = document.body,
@@ -27,3 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
     progress.style.setProperty('--scroll', scroll + '%');
   });
 });
+
+// Truncate posts
