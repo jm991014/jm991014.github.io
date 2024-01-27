@@ -154,11 +154,11 @@ pre {
 }
 /*backtick 강조*/
 code {
-  padding: .25em .5em;
+  padding: .25rem .3rem;
   font-size: 85%;
   color: #63E6BE;
   background-color: #323238;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 pre {
   display: block;

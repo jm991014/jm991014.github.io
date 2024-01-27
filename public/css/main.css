@@ -5,3 +5,19 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* img + em {
+    display: block;
+    text-align: center;
+    font-size: .8rem;
+} */
+/* .progress-bar {
+    background: linear-gradient(to right, white var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 3px;
+    z-index: 9000;
+} */
