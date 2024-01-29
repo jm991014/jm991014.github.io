@@ -29,4 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// code block theme
+hljs.initHighlightingOnLoad();
+
 // Truncate posts
