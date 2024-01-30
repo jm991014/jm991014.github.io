@@ -200,8 +200,8 @@ Surface(
 ```
 여기서도 elevation 대신 shadowElevation, tonalElevation을 사용하게 되는데, 아래와 같은 특징이 있다:
 
-1. shadowElevation: 값이 증가할수록 도형 주변의 shadow가 짙어진다.
-2. tonalElevation: 값이 증가할수록 도형의 색조가 짙어진다.
+1. `shadowElevation`: 값이 증가할수록 도형 주변의 shadow가 짙어진다.
+2. `tonalElevation`: 값이 증가할수록 도형의 색조가 짙어진다.
 
 `@Preview`주석에 매개변수로 다크 테마도 적용해볼 수 있는데, 지금까지 작성한 코드의 결과물을 각각 라이트, 다크 모드로 볼 수 있다.
 ```Kotlin
