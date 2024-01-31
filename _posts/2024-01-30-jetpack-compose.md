@@ -18,6 +18,8 @@ toc: true
 
 만들 수 있는 Compose Activity에는 Empty Compose Activity와 Empty Compose Activity(Material3)가 있는데, 블로그들을 참고하였을 때 대부분 아래 것을 사용하길래 무엇이 다른가 살펴보기 위해 두 가지 모두 프로젝트를 만들어 보았다.
 
+<!--break-->
+
 app단의 `build.gradle`을 살펴보았을 때, 사용하는 Material version이 다른 것을 알 수 있는데, 차세대인 [Compose Material3](https://developer.android.com/jetpack/androidx/releases/compose-material3?hl=ko)로 프로젝트를 생성하였다.
 
 <p align="center">
