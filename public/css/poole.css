@@ -132,8 +132,7 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  border-top: 2px solid #c0c0c0;
 }
 
 abbr {
@@ -347,7 +346,10 @@ tbody tr:nth-child(odd) th {
 .post-title {
   margin-top: 0;
 }
-
+/* .post-title a:hover {
+  color: #363636;
+  transition: 0.5s ease !important;
+} */
 /* Meta data line below post title */
 .post-date {
   display: block;

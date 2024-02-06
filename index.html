@@ -12,7 +12,7 @@ title: categories
         {% endif %}
         <div class="card-body">
           <h1 class="card-title">{{ post.title }}</h1>
-          <span class="post-date"> <i class="fa-solid fa-calendar"></i> {{ post.date | date_to_string }}</span>
+          <span class="card-date"> <i class="fa-solid fa-calendar"></i> {{ post.date | date_to_string }}</span>
           <p class="card-content">{{ post.content | strip_html | truncate: 150 }}</p>
         </div>
       </a>
