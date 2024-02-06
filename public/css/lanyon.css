@@ -370,8 +370,7 @@ a.sidebar-nav-item:focus {
 
 .pagination {
   overflow: hidden; /* clearfix */
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin: 2rem 0 1rem 0;
   font-family: "D2Coding", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
@@ -385,6 +384,10 @@ a.sidebar-nav-item:focus {
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
+  border-radius: 12px 12px 0 0;
+}
+.pagination-item:last-child {
+  border-radius: 0 0 12px 12px;
 }
 
 /* Only provide a hover state for linked pagination items */
@@ -394,7 +397,7 @@ a.pagination-item:hover {
 
 @media (min-width: 30em) {
   .pagination {
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
   .pagination-item {
     float: left;
@@ -402,13 +405,11 @@ a.pagination-item:hover {
   }
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius:    4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 12px 0 0 12px;
   }
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius:    4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 0 12px 12px 0;
   }
 }
 

@@ -11,9 +11,10 @@
     background-repeat: no-repeat;
     width: 100%;
     position: fixed;
+    border-radius: 1px;
     top: 0px;
     left: 0;
-    height: 1.5px;
+    height: 2px;
     z-index: 9000;
 }
 
@@ -42,9 +43,9 @@
 /* post container */
 .card {
     margin-bottom: 18px;
-    padding: 18px;
+    padding: 5px 25px;
     background-color: #1e1e1e;
-    border-radius: 4px;
+    border-radius: 12px;
     border: 1.5px solid #363636;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
