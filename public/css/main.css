@@ -36,5 +36,43 @@
     transition: 0.5s ease;
 }
 .post-tag-count {
-    font-size: 14px; /* 글씨 크기를 작게 설정합니다. */
+    font-size: 14px;
+}
+
+/* post container */
+.card {
+    margin-bottom: 18px;
+    padding: 18px;
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    border: 1.5px solid #363636;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-link {
+    display: flex;
+    text-decoration: none !important;
+}
+.card:hover {
+    background-color: #272727;
+    transition: 0.5s ease;
+}
+.card-body {
+    font-size: 0.75rem;
+}
+
+.card-title {
+font-size: 1.25rem;
+margin-bottom: 10px;
+}
+
+.post-date {
+display: block;
+color: #888;
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+.card-content {
+margin-bottom: 15px;
+color: #afb0b1;
 }

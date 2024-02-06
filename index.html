@@ -1,23 +1,22 @@
 ---
 layout: default
-title: Home
+title: categories
 ---
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
+    <div class="card">
+      <a href="{{ post.url | absolute_url }}" class="card-link">
+        {% if post.image %}
+          <img src="{{ post.image }}" class="card-image" alt="{{ post.title }}">
+        {% endif %}
+        <div class="card-body">
+          <h1 class="card-title">{{ post.title }}</h1>
+          <span class="post-date"> <i class="fa-solid fa-calendar"></i> {{ post.date | date_to_string }}</span>
+          <p class="card-content">{{ post.content | strip_html | truncate: 150 }}</p>
+        </div>
       </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    {{ post.content | split:'<!--break-->' | first }}
-    {% if post.content contains '<!--break-->' %}
-      <a href="{{ post.url }}">...더보기</a>
-    {% endif %}
-  </div>
+    </div>
   {% endfor %}
 </div>
 
@@ -37,3 +36,9 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+
+<style>
+  
+
+  
+</style>
