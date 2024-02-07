@@ -101,8 +101,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   color: #cccccc;
 }
+.masthead-title a:hover {
+  text-decoration: none;
+  color:#fff;
+}
 .masthead-title a {
-  color: #cccccc;
+  color: #afb0b1;
+  transition: 0.5s ease-in-out;
 }
 .masthead-title small {
   font-size: 75%;
@@ -117,6 +122,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   .masthead-title small {
     display: none;
+  }
+  .masthead-title a:hover {
+    text-decoration: none;
+    color:#036635;
   }
 }
 
@@ -161,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar content */
 .sidebar a {
   font-weight: normal;
-  color: #cccccc;
+  color: #afb0b1;
 }
 .sidebar-item {
   padding: 1rem;
@@ -194,6 +203,8 @@ a.sidebar-nav-item:focus {
   text-decoration: none;
   background-color: rgba(255,255,255,.1);
   border-color: transparent;
+  color: #eaeced;
+  transition: 0.3s ease-in-out;
 }
 
 @media (min-width: 48em) {
@@ -231,7 +242,6 @@ a.sidebar-nav-item:focus {
   border-radius: .25rem;
   cursor: pointer;
 }
-
 .sidebar-toggle::before {
   display: inline-block;
   width: 32px;

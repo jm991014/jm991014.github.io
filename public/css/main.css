@@ -31,10 +31,10 @@
     background-color: #333333;
     border-radius: 4px;
     text-decoration: none !important;
+    transition: 0.5s ease-in-out;
 }
 .post-tag:hover {
     filter: invert(100%);
-    transition: 0.5s ease;
 }
 .post-tag-count {
     font-size: 14px;
@@ -48,6 +48,7 @@
     border-radius: 12px;
     border: 1.5px solid #363636;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
 }
 .card-link {
     display: flex;
@@ -55,7 +56,6 @@
 }
 .card:hover {
     background-color: #272727;
-    transition: 0.5s ease;
 }
 .card-body {
     font-size: 0.75rem;
