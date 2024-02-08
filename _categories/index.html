@@ -7,7 +7,7 @@ permalink: /categories/
 <div class="tags-expo">
   <div class="tags-expo-list">
     {% for tag in site.categories %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">
+    <a href="{{ tag[0] }}" class="post-tag">
       <i class="fa-solid fa-tag"></i> {{ tag[0] }} <span class="post-tag-count">{{ tag[1] | size }}</span>
     </a>
     {% endfor %}
