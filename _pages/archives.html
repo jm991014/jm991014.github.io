@@ -4,6 +4,16 @@ title: Archives
 permalink: /archives/
 ---
 
-{% for post in site.posts %}
-    {{ post.date | date_to_string }} &mdash; <a href="{{ post.url | absolute_url }}">{{ post.title }}</a><br>
+<hr>
+
+{% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in posts_by_year %}
+  <h2 class="year-title">{{ year.name }}</h2>
+  {% for post in year.items %}
+    <p class="post-info">
+      <span class="post-date">{{ post.date | date: '%b %d' }}</span>
+      &mdash;
+      <a href="{{ post.url | absolute_url }}" class="post-link">{{ post.title }}</a>
+    </p>
+  {% endfor %}
 {% endfor %}
