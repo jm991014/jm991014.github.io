@@ -390,7 +390,9 @@ a.sidebar-nav-item:focus {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #363636;
+  background-color: #272727;
+  border: 1.5px solid #363636;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
