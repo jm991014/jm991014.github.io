@@ -12,19 +12,19 @@ tag: [Android, Jetpack Compose, Kotlin]
 
 `Jetpack`은 쉽게 말해 구글에서 제공하는 라이브러리들의 모음이고, `Compose`는 기존에 View를 XML 파일로 작성하던 명령형 UI가 아닌 선언형 UI 개발을 가능하게 해주는 Framework이다. **코드 감소**, **직관적**, **빠른 개발 과정**, **강력한 성능**과 같은 장점이 있다고 하니 일단 project를 생성해보았다.
 
-<img src="/assets/img/post_assets/2024-01-24/new-project.png" width="650">
+<img src="/assets/img/post_assets/2024-01-24/new-project.png" width="650" alt="new_project">
 
 만들 수 있는 Compose Activity에는 Empty Compose Activity와 Empty Compose Activity(Material3)가 있는데, 블로그들을 참고하였을 때 대부분 아래 것을 사용하길래 무엇이 다른가 살펴보기 위해 두 가지 모두 프로젝트를 만들어 보았다.
 
 app단의 `build.gradle`을 살펴보았을 때, 사용하는 Material version이 다른 것을 알 수 있는데, 차세대인 [Compose Material3](https://developer.android.com/jetpack/androidx/releases/compose-material3?hl=ko)로 프로젝트를 생성하였다.
 
-<img src="/assets/img/post_assets/2024-01-24/material.png" width="500">
+<img src="/assets/img/post_assets/2024-01-24/material.png" width="500" alt="material">
 
-<img src="/assets/img/post_assets/2024-01-24/material3.png" width="650">
+<img src="/assets/img/post_assets/2024-01-24/material3.png" width="650" alt="material3">
 
 프로젝트를 처음 생성하고 나면 아래와 같이 기존 Android 프로젝트와 구조가 다른 것을 알 수 있다. 일단 튜토리얼대로 생성된 코드를 지워준 후, 하나씩 진행해보았다.
 
-<img src="/assets/img/post_assets/2024-01-24/project-first.png">
+<img src="/assets/img/post_assets/2024-01-24/project-first.png" alt="project-first">
 
 이제는 XMl 파일에 TextView를 생성하고, 해당 위젯이 있는 layout을 inflate하고,viewBinding이나 findViewById()로 연결하는 귀찮은 과정 없이 onCreate() 함수 안에
 ```kotlin
@@ -62,7 +62,7 @@ fun PreviewMessageCard() {
 
 매개 변수로 추가를 해주면 전체적인 화면을 볼 수 있다.
 
-<img src="/assets/img/post_assets/2024-01-24/project-systemui.png" width="250">
+<img src="/assets/img/post_assets/2024-01-24/project-systemui.png" width="250" alt="systemUI">
 
 <br>
 
@@ -76,13 +76,13 @@ fun PreviewMessageCard() {
 
 각 정렬 방식을 적용해 보았을 때 결과는 아래와 같다:
 
-|<img src="/assets/img/post_assets/2024-01-24/column.png">|<img src="/assets/img/post_assets/2024-01-24/row.png">|<img src="/assets/img/post_assets/2024-01-24/box.png">|
+|<img src="/assets/img/post_assets/2024-01-24/column.png" alt="column">|<img src="/assets/img/post_assets/2024-01-24/row.png" alt="row">|<img src="/assets/img/post_assets/2024-01-24/box.png" alt="box">|
 |:---:|:---:|:---:|
 |Column|Row|Box|
 
 다시 돌아와 `Column`으로 `Text`를 정렬하고, 상위 레이아웃은 `Row`로 `Image`와 함께 감싸 정렬해준다. (이미지는 귀찮아서 프로젝트 생성시 주어지는 launcher icon을 사용했다.)
 
-<img src="/assets/img/post_assets/2024-01-24/image.png" width="400">
+<img src="/assets/img/post_assets/2024-01-24/image.png" width="400" alt="image">
 
 이미지가 Text에 비해 큰 느낌이 든다. 이럴 때 사용하는 것이 `Modifier`인데, 이를 통해 크기나 레이아웃, 모양을 변경할 수 있으며, 클릭과 같은 상호작용 또한 추가할 수 있다.
 ```kotlin
@@ -103,7 +103,7 @@ Row(modifier = Modifier.padding(all = 8.dp)) {
     }
 ```
 
-<img src="/assets/img/post_assets/2024-01-24/modifier.png" width="550">
+<img src="/assets/img/post_assets/2024-01-24/modifier.png" width="550" alt="modifier">
 
 <br>
 
@@ -141,13 +141,13 @@ fun MessageCard(msg: Message) {
 ```
 
 튜토리얼에는 color이라고 되어 있지만 Material3로 넘어오면서 `colorScheme`으로 변경되었다. 이후 typography도 그렇고 shape에서도 변경사항이 있다. [Compose의 Material 2에서 Material 3으로 이전](https://developer.android.com/jetpack/compose/designsystems/material2-material3?hl=ko)을 참고하여 변경된 부분을 수정해주었다.
-<img src="/assets/img/post_assets/2024-01-24/material-color.png">
+<img src="/assets/img/post_assets/2024-01-24/material-color.png" alt="material-color">
 
 ### Typography
 
 마찬가지로 변경된 Typescale을 참고하여 MessageCard 함수 내 Text에 typography를 추가해준다.
 
-<img src="/assets/img/post_assets/2024-01-24/material-typescale.png">
+<img src="/assets/img/post_assets/2024-01-24/material-typescale.png" alt="material-typescale">
 
 ```kotlin
 Column {
@@ -195,7 +195,7 @@ Surface(
 )
 ```
 
-<img src="/assets/img/post_assets/2024-01-24/material-final.png" width="400">
+<img src="/assets/img/post_assets/2024-01-24/material-final.png" width="400" alt="material-final">
 
 <br>
 
@@ -223,7 +223,7 @@ fun PreviewConversation() {
 }
 ```
 
-<img src="/assets/img/post_assets/2024-01-24/list.png" width="350">
+<img src="/assets/img/post_assets/2024-01-24/list.png" width="350" alt="list">
 
 ### Animations
 
@@ -251,7 +251,7 @@ fun MessageCard(msg: Message) {
 
 애니메이션은 배경색에도 적용할 수 있다. `animateColorAsState` 함수로 상태에 따라 색을 변경해줄 수 있고, `animateContentSize` modifier로 메시지 컨테이너의 크기를 더욱 부드럽게 해줄 수 있다. <br>
 
-|<img src="/assets/img/post_assets/2024-01-24/final-anim.gif">|<img src="/assets/img/post_assets/2024-01-24/final-noanim.gif">|
+|<img src="/assets/img/post_assets/2024-01-24/final-anim.gif" alt="anim">|<img src="/assets/img/post_assets/2024-01-24/final-noanim.gif" alt="noanim">|
 |:---:|:---:|
 |애니메이션 o|애니메이션 x|
 
